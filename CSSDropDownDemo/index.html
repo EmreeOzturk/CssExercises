@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown Demo</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+        }
+
+        .kapsayici1 {
+            width: 200px;
+            height: 70px;
+            background-color: burlywood;
+            line-height: 70px;
+            color: gray;
+
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+            border-radius: 20px;
+
+        }
+
+        .kapsayici1:hover .acilir1 {
+            display: block;
+
+        }
+
+        .acilir1 {
+            width: 200px;
+            /* background-color: #111; */
+            color: red;
+            line-height: 100px;
+
+            position: absolute;
+            left: 0;
+          
+            display: none;
+
+        }
+        a,h1{
+            margin: 0;
+            display: block;
+            color: antiquewhite;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-radius: 20px;
+        }
+        .kapsayici1 h1{
+            color: black;
+        }
+        .acilir1 a:hover{
+            background-color: rgb(188, 162, 59);
+            color: #111;
+        }
+        a{
+            background-color: burlywood;
+            margin : 8px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="kapsayici1">
+        <h1>HOVER</h1>
+        <div class="acilir1">
+            <a href="">menu 1</a><a href="">menu 2</a><a href="">menu 3</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
