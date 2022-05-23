@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Flip Card</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+
+            /* padding: 30px; */
+            width: 80vw;
+            height: 40vh;
+            background-color: brown;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap ;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            
+        }
+
+        .card-item {
+            /* border: 2px solid blue; */
+            width: 30%;
+            height: 20%;
+            text-align: center;
+            background-color: coral;
+            color: white;
+            font-size: 20px;
+            /* transform-origin: right center; */
+            /* transform-style: preserve-3d ; */
+            transition: all 1s;
+            display:flex;
+            margin: 10px;
+            position: relative;
+            padding: 10px;
+        }
+
+        .front {
+            width: 90%;
+            height: 90%;
+            
+        }
+
+        .back {
+            display: none;
+            transform: rotateY(180deg);
+            width: 90%;
+            height: 90%;
+            
+        }
+
+        .card-item:hover {
+            transform: rotateY(180deg) ;
+            transition: all 1s ease-in;
+        }
+
+        .card-item:hover .front {
+           display: none;
+        }
+
+        .card-item:hover .back {
+           display: inline-block;
+
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="card-item">
+            <div class="front">
+                <h2>
+                    Css Flip Card
+                </h2>
+            </div>
+            <div class="back"><p>Lorem ipsum dolor sit amet consectetur</p> </div>
+        </div>
+        <div class="card-item">
+            <div class="front">
+                <h2>
+                    Css Flip Card
+                </h2>
+            </div>
+            <div class="back"><p>Lorem ipsum dolor sit amet consectetur</p> </div>
+        </div>
+        <div class="card-item">
+            <div class="front">
+                <h2>
+                    Css Flip Card
+                </h2>
+            </div>
+            <div class="back"><p>Lorem ipsum dolor sit amet consectetur</p> </div>
+        </div>
+        <div class="card-item">
+            <div class="front">
+                <h2>
+                    Css Flip Card
+                </h2>
+            </div>
+            <div class="back"><p>Lorem ipsum dolor sit amet consectetur</p> </div>
+        </div>
+        
+        <div class="card-item">
+            <div class="front">
+                <h2>
+                    Css Flip Card
+                </h2>
+            </div>
+            <div class="back"><p>Lorem ipsum dolor sit amet consectetur</p> </div>
+        </div>
+        <div class="card-item">
+            <div class="front">
+                <h2>
+                    Css Flip Card
+                </h2>
+            </div>
+            <div class="back"><p>Lorem ipsum dolor sit amet consectetur</p> </div>
+        </div>
+        
+        
+
+    </section>
+</body>
+
+</html>
