@@ -1,0 +1,12 @@
+.paragraf{
+    color:blue;
+
+}
+#paraf1{
+    color:aqua;
+}
+.paraf1{
+    color:yellow;
+}
+/* inline > internal > external  */
+/* id > class > element */

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Attribute Selector</title>
+    <style>
+        body {
+            font-size: large;
+        }
+
+        a[target] {
+            text-decoration: none;
+            color: black;
+            border: 2px solid red;
+            font-weight: bold;
+            padding: 3px;
+
+        }
+
+        a[target='_blank'] {
+            color: yellow;
+        }
+
+        p[title~='paragraf'] {
+            font-weight: bold;
+        }
+
+        ul li[class|='item'] {
+            color: red;
+        }
+        ol li[class^='item']{
+            color : blue
+        }
+    </style>
+</head>
+
+<body>
+    <div><a href="#" target="_blank">Link1</a>
+        <a href="#" target="self">Link2</a>
+        <a href="#" target="_blank">Link3</a>
+    </div>
+    <div>
+        <hr>
+        <hr>
+        <hr>
+        <p title="paragraf p1">Lorem ipsum dolor sit amet.</p>
+        <p title="paragraf p2">Magnam numquam ad ipsam beatae.</p>
+        <p title="paraf p3">Similique animi aut sapiente culpa.</p>
+    </div>
+    <div>
+        <ul>
+            <li class="textitem">Lorem, ipsum dolor.</li>
+            <li class="item-1">Eligendi, placeat fugiat.</li>
+            <li class="list-item">Illo, nihil non?</li>
+        </ul>
+    </div>
+    <div>
+        <ol>
+            <li class="text item">Lorem, ipsum dolor.</li>
+            <li class="item-1">Eligendi, placeat fugiat.</li>
+            <li class="itemlist">Illo, nihil non?</li>
+        </ol>
+    </div>
+</body>
+
+</html>
